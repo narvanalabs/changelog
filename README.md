@@ -1,6 +1,10 @@
 # Narvana Changelog
 
-Release notes and changelog for Narvana
+[![Astro](https://img.shields.io/badge/Astro-5.0-BC52EE?style=flat&logo=astro&logoColor=white)](https://astro.build/)
+[![Bun](https://img.shields.io/badge/Bun-Runtime-f9f1e1?style=flat&logo=bun&logoColor=black)](https://bun.sh/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=flat)](https://github.com/narvanalabs/control-plane/blob/main/LICENSE)
+
+Release notes and changelog for Narvana - the modern PaaS platform.
 
 ## Development
 
@@ -52,4 +56,4 @@ For example, for version 1.0.0: `src/assets/custom/release-1_0_0.svg`
 
 ## License
 
-MIT License - see the control-plane repository for details.
+Apache License 2.0 - see the control-plane repository for details.
