@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Main background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Shine overlay gradient -->
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <!-- Glitter animations -->
+    <style>
+      @keyframes glitter1 { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.4; } }
+      @keyframes glitter2 { 0%, 100% { opacity: 0.15; } 50% { opacity: 0.5; } }
+      @keyframes glitter3 { 0%, 100% { opacity: 0.2; } 50% { opacity: 0.6; } }
+      .pixel-glitter-1 { animation: glitter1 2s ease-in-out infinite; }
+      .pixel-glitter-2 { animation: glitter2 2.5s ease-in-out infinite; }
+      .pixel-glitter-3 { animation: glitter3 1.8s ease-in-out infinite; }
+    </style>
+  </defs>
+  
+  <!-- Main background with rounded corners -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" rx="12"/>
+  
+  <!-- Pixelated glitter pattern -->
+  <g>
+    <!-- Top left cluster (white pixels) -->
+    <rect x="30" y="63" width="22" height="22" fill="#ffffff" class="pixel-glitter-1"/>
+    <rect x="67" y="63" width="22" height="22" fill="#ffffff" class="pixel-glitter-2"/>
+    <rect x="105" y="63" width="22" height="22" fill="#ffffff" class="pixel-glitter-3"/>
+    <rect x="30" y="141" width="22" height="22" fill="#ffffff" class="pixel-glitter-3"/>
+    <rect x="67" y="141" width="22" height="22" fill="#ffffff" class="pixel-glitter-1"/>
+    
+    <!-- Top right cluster (white pixels) -->
+    <rect x="1035" y="78" width="22" height="22" fill="#ffffff" class="pixel-glitter-2"/>
+    <rect x="1072" y="78" width="22" height="22" fill="#ffffff" class="pixel-glitter-1"/>
+    <rect x="1110" y="78" width="22" height="22" fill="#ffffff" class="pixel-glitter-3"/>
+    <rect x="1057" y="157" width="22" height="22" fill="#ffffff" class="pixel-glitter-3"/>
+    
+    <!-- Bottom right cluster (dark pixels for contrast) -->
+    <rect x="1080" y="456" width="22" height="22" fill="#000000" class="pixel-glitter-1"/>
+    <rect x="1117" y="456" width="22" height="22" fill="#000000" class="pixel-glitter-3"/>
+    <rect x="1102" y="535" width="22" height="22" fill="#000000" class="pixel-glitter-2"/>
+    
+    <!-- Bottom left cluster (dark pixels for contrast) -->
+    <rect x="37" y="472" width="22" height="22" fill="#000000" class="pixel-glitter-2"/>
+    <rect x="75" y="472" width="22" height="22" fill="#000000" class="pixel-glitter-1"/>
+    <rect x="52" y="551" width="22" height="22" fill="#000000" class="pixel-glitter-3"/>
+  </g>
+  
+  <!-- Shine overlay (top half) -->
+  <rect width="1200" height="315" fill="url(#shineGradient)" rx="12"/>
+  
+  <!-- Version badge -->
+  <g transform="translate(75, 236)">
+    <!-- Badge shadow -->
+    <rect width="240" height="189" rx="45" fill="#000000" opacity="0.2"/>
+    <!-- Badge background -->
+    <rect x="2" y="2" width="234" height="176" rx="42" fill="#ffffff"/>
+    <rect x="4" y="4" width="228" height="163" rx="39" fill="url(#bgGradient)"/>
+    <!-- Badge glass shine -->
+    <rect x="4" y="4" width="228" height="81" rx="39" fill="url(#shineGradient)" opacity="0.6"/>
+    <!-- Version text -->
+    <text x="120" y="119" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">v0.0.1</text>
+  </g>
+  
+  <!-- Main brand text -->
+  <text x="375" y="330" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" text-anchor="start">NARVANA</text>
+  
+  <!-- Subtitle -->
+  <text x="375" y="441" font-family="Arial, sans-serif" font-size="30" fill="#ffffff" opacity="0.9" text-anchor="start">New version released</text>
+</svg>
